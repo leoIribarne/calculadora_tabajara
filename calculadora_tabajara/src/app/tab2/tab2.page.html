@@ -1,0 +1,101 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calculadora Padrão 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- visor auxilar para possivel nova feature -->
+  <!-- <ion-item>
+    <ion-label  class="visor2">{{visor2}}</ion-label>
+</ion-item> -->
+  <ion-item>
+        <ion-label  class="visor">{{visor}}</ion-label>
+    </ion-item>
+  <br>
+<ion-grid>
+  <ion-row>
+<ion-col >
+  <ion-button (click)="limpar()" expand="block" color="medium" shape="round" class="btn-centrais">c</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="modulo()" expand="block" color="medium"  shape="round" class="btn-centrais">+/-</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button  (click)="porcentagem()" expand="block" color="medium" shape="round" class="btn-centrais">%</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="divisao()" expand="block" color="warning"  shape="round" class="btn_laterais">÷</ion-button>
+</ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid>
+  <ion-row>
+<ion-col >
+  <ion-button (click)="numero(7)" expand="block" color="dark" shape="round" class="btn-centrais">7</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="numero(8)" expand="block" color="dark"  shape="round" class="btn-centrais">8</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button  (click)="numero(9)" expand="block" color="dark" shape="round" class="btn-centrais">9</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button  (click)="multiplicacao()" expand="block"  color="warning" shape="round" class="btn_laterais">x</ion-button>
+</ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid>
+  <ion-row>
+<ion-col>
+  <ion-button (click)="numero(4)" expand="block" color="dark" shape="round" class="btn-centrais">4</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="numero(5)"  expand="block" color="dark" shape="round" class="btn-centrais">5</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button  (click)="numero(6)" expand="block" color="dark"  shape="round" class="btn-centrais">6</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="substracao()" expand="block" color="warning"  shape="round" class="btn_laterais">-</ion-button>
+</ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid>
+  <ion-row>
+<ion-col>
+  <ion-button (click)="numero(1)" expand="block" color="dark"  shape="round" class="btn-centrais">1</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="numero(2)" expand="block"  color="dark" shape="round" class="btn-centrais">2</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="numero(3)" expand="block"  color="dark" shape="round" class="btn-centrais">3</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="adicao()" expand="block" color="warning"  shape="round" class="btn_laterais">+</ion-button>
+</ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+<ion-col size="6" >
+  <ion-button  (click)="numero(0)" expand="block" color="dark" shape="round" class="btn-zero"  >0</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="virgula()" expand="block" color="dark"  shape="round" class="btn-centrais">,</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="resultado()" expand="block" color="warning" shape="round" class="btn_laterais" >=</ion-button>
+</ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
